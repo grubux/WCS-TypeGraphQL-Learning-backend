@@ -3,9 +3,9 @@ import Wilder from "./Wilder";
 
 const wilders: Wilder[] = [{ name: "Alain", city: "Paris", skills: [] }];
 
-@Resolver()
+@Resolver(Wilder)
 class WilderResolver {
-  @Query()
+  @Query(() => [Wilder])
   allWilders() {
     return wilders;
   }

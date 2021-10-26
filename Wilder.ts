@@ -7,7 +7,7 @@ class Wilder {
   name: string;
   @Field()
   city: string;
-  @Field()
+  @Field(() => [Skill])
   skills: Skill[];
 }
 
