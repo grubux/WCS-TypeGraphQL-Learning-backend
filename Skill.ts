@@ -7,3 +7,5 @@ class Skill {
   @Field()
   votes: number;
 }
+
+export default Skill;
